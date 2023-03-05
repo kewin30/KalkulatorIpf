@@ -1,0 +1,173 @@
+
+html{
+  font-size: .975em;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+  .left-panel, .right-panel {
+    flex: 1 1 50%;
+  }
+  
+  .left-panel {
+    background-color: #FFE8D6;
+    min-height: 100vh
+  }
+  
+  .right-panel {
+    background-color: #B7B7A4;
+  }
+
+  input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.wyniki input{
+  color:#1e1e1e ;
+}
+.switch-container label {
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switch-container label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.switch-container input:checked + label {
+  background: #6B705C;
+}
+
+.switch-container input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.switch{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 1em;
+}
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .switch-container span {
+    margin-bottom: 15px;
+    margin-left: 0.75em;
+  }
+  input[type='radio']{
+    width: 17px;
+    height: 17px;
+}
+  .switch {
+    margin-top: 1em;
+    margin-bottom: 10px;
+  }
+  .switch-container span{
+    margin-top: 1em;
+    font-size: 2em;
+  }
+ /* /////// */
+
+  .dane{
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+  .dane p{
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .dane input{
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: #FFE8D6;
+    display: inline-block;
+    margin-right: 3em;
+  
+  }
+  .dane .plec{
+    margin-top: 1.75em;
+  }
+  .plec label{
+    font-size: 1em;
+  }
+  .raddioId{
+    accent-color: black;
+  }
+  .raddioId input[type="radio"] {
+    margin-right: 5px;
+  }
+  .wyniki{
+    margin-left: 1em;
+  }
+  .wyniki p{
+    margin-top: 1.75em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .wyniki input{
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none; /* opcjonalne - usuwa domyślne outline dla aktywnego elementu */
+    background-color: transparent;
+    display:block;
+    margin-top: 1em;
+  }
+  .formula{
+    margin-left: 1em;
+  }
+  .formula p{
+    margin-top: 1em;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .buttons{
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  .buttons button{
+    font-size: 1.5em;
+    margin-right: 1em;
+  }
+  #success{
+    color: white;
+    background-color: #6B705C;
+    border: none;
+    padding: .5rem 1rem;
+  }
+  #fail{
+    background-color: transparent;
+    color:#6B705C;
+    border-color: #6B705C;
+    padding: .5rem 1rem;
+  }
+  #fail:hover{
+    background-color: #6B705C;
+    color: white;
+  }
+.buttons button:hover{
+  cursor: pointer;
+}
