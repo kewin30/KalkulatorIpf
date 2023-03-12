@@ -2,6 +2,16 @@
 html{
   font-size: .975em;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -13,13 +23,10 @@ html{
   }
   
   .left-panel {
-    background-color: #FFE8D6;
+    background-color: #EDEDE9;
     min-height: 100vh
   }
   
-  .right-panel {
-    background-color: #B7B7A4;
-  }
 
   input[type=checkbox]{
   height: 0;
@@ -102,7 +109,7 @@ html{
     border: none;
     border-bottom: 2px solid black;
     outline: none;
-    background-color: #FFE8D6;
+    background-color: transparent;
     display: inline-block;
     margin-right: 3em;
   
@@ -154,14 +161,14 @@ html{
   }
   #success{
     color: white;
-    background-color: #6B705C;
+    background-color: black;
     border: none;
     padding: .5rem 1rem;
   }
   #fail{
     background-color: transparent;
-    color:#6B705C;
-    border-color: #6B705C;
+    color:black;
+    border-color: black;
     padding: .5rem 1rem;
   }
   #fail:hover{
@@ -171,3 +178,97 @@ html{
 .buttons button:hover{
   cursor: pointer;
 }
+.osprzet{
+  margin-left: 3em;
+  display: none;
+}
+.raddioId {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wyniki p span{
+  margin-left: 16.5em;
+}
+.wyniki input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.right-align {
+  margin-left: 10em;
+  margin-bottom: 7.37em;
+}
+#wagaL{
+  margin-left: 1.5em;
+}
+#imieINazwiskoL{
+  width:14em;
+}
+table {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  border-collapse: collapse;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  width:98%;
+}
+
+tr{
+  border-bottom: 2px solid black;
+}
+.headers th{
+  font-weight: bold;
+}
+.headers th:not(:first-child){
+  padding-left: 2em;
+}
+.headers th:first-child {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+.headers th:nth-child(2){
+  padding-left: 0em;
+}
+.wynikiOsob td{
+  padding-left: 2em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+.wynikiOsob td:first-child {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+.wynikiOsob td:nth-child(2){
+  padding-left: 1em;
+}
+.wynikiOsob td:nth-child(3){
+  padding-left: 4em;
+}
+.wynikiOsob td:nth-child(4){
+  padding-left: 3.7em;
+}
+.wynikiOsob td:nth-child(5){
+  padding-left: 3.5em;
+}
+.wynikiOsob td:nth-child(6){
+  padding-left: 3em;
+}
+.wynikiOsob td:nth-child(7){
+  padding-left: 3em;
+}
+.wynikiOsob td:nth-child(8){
+  padding-left: 4em;
+}
+.wynikiZawodnika td{
+ color:green;
+ font-weight: bold;
+ background-color: rgba(0, 255, 0, 0.05);
+}
+

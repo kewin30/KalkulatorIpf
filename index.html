@@ -1,132 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="left-panel.css">
-    <link rel="stylesheet" href="right-panel.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="left-panel.css">
+  <title>Strona Pawla</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="left-panel">
-            <div class="switch-container">
-                <span>Swój zawodnik/Przeciwnik</span>
-                <div class="switch">
-                  <input type="checkbox" id="switch" /><label for="switch"></label>
-                </div>
-              </div>
-            <div class="dane">
-                <p>Podstawowe dane</p>
-                <input type="text" placeholder="Imię i Nazwisko">
-                <input type="number" placeholder="Waga">
-                <div class="plec">
-                    <p>Wybierz płeć</p>
-                    <fieldset class="raddioId">
-                        <div>
-                          <input type="radio" name="plec" value="Kobieta" checked >
-                          <label for="Kobieta">Kobieta</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="plec" value="Mężczyzna">
-                          <label for="Mężczyzna">Mężczyzna</label>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="wyniki">
-                <p>Pierwsza tura: </p>
-                <input type="number" placeholder="Squat">
-                <input type="number" placeholder="BenchPress">
-                <input type="number" placeholder="Deadlift">
-            </div>
-            <div class="formula">
-                <p>Wybierz co Cie interesuje</p>
-                <fieldset class="raddioId">
-                    <div>
-                      <input type="radio" id="IPF" name="wybor" value="IPF" checked >
-                      <label for="IPF">IPF</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="Wilks" name="wybor" value="Wilks">
-                      <label for="Wilks">Wilks</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="Dots" name="wybor" value="Dots">
-                      <label for="Dots">Dots</label>
-                    </div>
-                  </fieldset>
-            </div>
-            <div class="buttons">
-              <button id="success">Zaliczył</button>
-              <button id="fail">Nie udało się</button>
-            </div>
-            
-        </div>
-        <div class="right-panel">
-          <div class="daneKoncowe">
-            <p>Dane o zawodniku</p>
-            <div class="Bigger">
-              <span>Imie i Nazwisko</span>
-              <span class="prawa-StronaD">Waga</span>
-            </div>
-            <span id="ImieiNazwisko">Jan Kowalski</span>
-            <span class="prawa-StronaL">110 KG</span>
-
-            <div class="Bigger">
-              <div class="wynikiKoncowe">
-                <span>SQ</span>
-                <span>BP</span>
-                <span>DL</span>
-                <span class="prawa-StronaD">TOTAL</span>
-              </div>
-            </div>
-            <div class="PoszczegolneBoje">
-              <span>255</span>
-              <span>300</span>
-              <span>400</span>
-              <span class="prawa-StronaL">1000 KG</span>
-            </div>
-            <div class="Bigger">
-              <span>Kategoria</span>
-            </div>
-            <span>IPF</span>
-            <span class="prawa-StronaL">600 pkt</span>
-            <hr id="linia">
-          </div>
-          
-          <div class="Przeciwnicy">
-            <div class="Bigger">
-              <span>Dane o przeciwnikach</span><br>
-              <span>Imie i Nazwisko</span>
-              <span class="prawa-StronaD">Waga</span>
-            </div>
-            <span id="ImieiNazwisko">Jan Kowalski</span>
-            <span class="prawa-StronaL">110 KG</span>
-            <div class="Bigger">
-
-              <div class="wynikiKoncowe" style="margin-top: 1em;">
-                <div class="wynikiPrzeciwnicy">
-                  <span>SQ</span>
-                  <span>BP</span>
-                  <span>DL</span>
-                  <span>TOTAL</span>
-                  <span>Kategoria- IPF</span>
-                </div>
-                <div class="wynikiBoje">
-                  <span>300</span>
-                  <span>300</span>
-                  <span>300</span>
-                  <span>900</span>
-                  <span>575</span>
-                </div>
-              </div>
-            </div>
-            <hr id="linia">
-          
+  <div class="container">
+    <div class="left-panel">
+      <div class="switch-container">
+        <span>Swój zawodnik/Przeciwnik</span>
+        <div class="switch">
+          <input type="checkbox" id="switch" /><label for="switch"></label>
         </div>
       </div>
+      <div class="dane">
+        <p>Podstawowe dane</p>
+        <input type="text" placeholder="Imię i Nazwisko" id="imieINazwiskoL">
+        <input type="number" placeholder="Waga" id="wagaL">
+        <div class="plec">
+          <p>Wybierz płeć</p>
+          <fieldset class="raddioId">
+            <div>
+              <input type="radio" id="Kobieta" name="plec" value="Kobieta" checked>
+              <label for="Kobieta">Kobieta</label>
+            </div>
+            <div>
+              <input type="radio" id="Mezczyzna" name="plec" value="Mężczyzna">
+              <label for="Mężczyzna">Mężczyzna</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="wyniki">
+        <p>Wyniki:
+          <span>Predykcje:</span>
+        </p>
+        <div class="input-wrapper">
+          <div>
+            <input type="number" placeholder="Squat" id="Squat">
+            <input type="number" placeholder="BenchPress" id="BenchPress">
+            <input type="number" placeholder="Deadlift" id="Deadlift">
+          </div>
+          <div class="right-align">
+            <input type="number" placeholder="Deadlift" id="PredictDeadlift">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="formula">
+        <p>Wybierz co Cie interesuje</p>
+        <div class="raddioId">
+          <div class="jakasKlasa">
+            <div>
+              <input type="radio" id="IPF" name="wybor" value="IPF">
+              <label for="IPF">IPF</label>
+            </div>
+            <div>
+              <input type="radio" id="Wilks" name="wybor" value="Wilks" checked>
+              <label for="Wilks">Wilks</label>
+            </div>
+            <div>
+              <input type="radio" id="Dots" name="wybor" value="Dots">
+              <label for="Dots">Dots</label>
+            </div>
+          </div>
+          <div class="osprzet">
+            <div>
+              <input type="radio" name="Rodzaj" id="Raw" value="Raw" checked>
+              <label for="Raw">Raw</label>
+            </div>
+            <div>
+              <input type="radio" name="Rodzaj" id="Equip" value="Equip">
+              <label for="Equip">Sprzęt</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="buttons">
+        <button id="success">Zaliczył</button>
+        <button id="fail">Nie udało się</button>
+      </div>
+
+
+      <div class="tabelka">
+        <table class="sortable">
+          <tr class="headers">
+            <th>Imię i nazwisko</th>
+            <th>SQ</th>
+            <th>BP</th>
+            <th>DL</th>
+            <th>Total</th>
+            <th>DL</th>
+            <th>Predict</th>
+            <th>Kat/Punkty</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
