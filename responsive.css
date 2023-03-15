@@ -1,0 +1,141 @@
+
+@media (max-width: 1200px) {
+      .buttons button{
+        font-size: 0.9em;
+        margin-right: 1em;
+      }
+      .dane p{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+      .formula p{
+        margin-top: 1em;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+      .wyniki input{
+        font-size: 1.25em;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none; /* opcjonalne - usuwa domyślne outline dla aktywnego elementu */
+        background-color: transparent;
+        display:block;
+        margin-top: 1em;
+      }
+      .wyniki p span{
+        margin-left: 13.6em;
+      }
+      .switch-container label {
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        background: grey;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+      }
+      .switch-container label:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+      }
+      .switch-container span{
+        margin-top: 1em;
+        font-size: 1.5em;
+      }
+      .switch {
+        margin-top: 1em;
+      }
+      .dane{
+        margin-top: 2.5em;
+        margin-left: 1em;
+      }
+      .dane input{
+        font-size: 20px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        background-color: transparent;
+        display: inline-block;
+        margin-right: 3em;
+      }
+      .plec label{
+        font-size: 0.8em;
+      }
+      .wyniki p{
+        margin-top: 1.75em;
+        font-size: 1em;
+        margin-bottom: 1em;
+      }
+      .wyniki p span{
+        margin-left: 21em;
+      }
+      .right-align {
+        margin-left: 9em;
+        margin-bottom: 6em;
+      }
+      .formula p{
+        margin-top: 1em;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+      input[type='radio']{
+        width: 12px;
+        height: 12px;
+    }
+    #Mezczyzna{
+        margin-left: 1em;
+    }
+    #success{
+        color: white;
+        background-color: black;
+        border: none;
+        padding: .2rem.4rem;
+      }
+      #fail{
+        background-color: transparent;
+        color:black;
+        border-color: black;
+        padding: .2rem.4rem;
+      }
+      table {
+        margin-left: 0.5em;
+        margin-top: 1em;
+        border-collapse: collapse;
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        width:98%;
+      }
+    .wynikiOsob td{
+        padding-left: 1em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+      }
+      .wynikiOsob td:nth-child(2){
+        padding-left: 1.5em;
+      }
+      .wynikiOsob td:nth-child(3){
+        padding-left: 3.8em;
+      }
+      .wynikiOsob td:nth-child(4){
+        padding-left: 4em;
+      }
+      .wynikiOsob td:nth-child(5){
+        padding-left: 4em;
+      }
+      .wynikiOsob td:nth-child(6){
+        padding-left: 3em;
+      }
+      .wynikiOsob td:nth-child(7){
+        padding-left: 3.5em;
+      }
+      .wynikiOsob td:nth-child(8){
+        padding-left: 4em;
+      }
+}
