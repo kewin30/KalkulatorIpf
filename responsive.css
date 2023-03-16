@@ -139,3 +139,169 @@
         padding-left: 4em;
       }
 }
+
+
+
+@media (max-width: 700px) {
+  .buttons button{
+    font-size: 0.9em;
+    margin-right: 1em;
+  }
+  .dane p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .dane input{
+    margin-left: 0em;
+    margin-bottom: 1em;
+  }
+  #wagaL{
+    margin-left: 1.5em;
+    width: 12em;
+    margin-right: 0em;
+  }
+}
+
+@media (max-width: 600px) {
+  .switch-container label {
+    cursor: pointer;
+    width: 80px;
+    height: 26px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  .switch-container label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  .switch-container span{
+    margin-top: 1em;
+    font-size: 1em;
+  }
+  .switch {
+    margin-top: 1em;
+  }
+  .dane{
+    margin-top: 1em;
+  }
+  .dane p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .dane input{
+    margin-left: 0em;
+    margin-bottom: 1em;
+  }
+  #imieINazwiskoL{
+    border-bottom: 1px solid black;
+    width: 13em;
+    font-size: 0.75em;
+  }
+  #wagaL{
+    border-bottom: 1px solid black;
+    font-size: 0.75em;
+    margin-left: 1.5em;
+    width: 5em;
+    margin-right: 0em;
+  }
+  .dane p{
+    font-size: 1em;
+  }
+  input[type='radio']{
+    width: 8px;
+    height: 8px;
+  }
+  input[type='radio']:hover{
+    cursor: pointer;
+  }
+  .dane .plec{
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+  }
+  .wyniki{
+    margin-top: -1em;
+  }
+  .wyniki input{
+    margin-top: 0em;
+    font-size:0.75em;
+    border-bottom: 1px solid black;
+  }
+  .wyniki .input-wrapper{
+    margin-top: -2em;
+  }
+  .wyniki .right-align{
+    margin-top: 2.5em;
+    margin-left: 4.5em;
+  }
+  .wyniki p span{
+    margin-left: 10.5em;
+  }
+  .formula{
+    margin-top: -1.75em;
+  }
+  .formula p{
+    font-size: 1em;
+  }
+  .jakasKlasa{
+    font-size: 0.75em;
+  }
+  .osprzet{
+    font-size: 0.75em;
+  }
+  #success{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: .15rem.3rem;
+    font-size: 0.75em;
+  }
+  #fail{
+    background-color: transparent;
+    color:black;
+    border-color: black;
+    padding: .15rem.3rem;
+    font-size: 0.75em;
+  }
+
+  table {
+    margin-left: 0.5em;
+    margin-top: 1em;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+    width:98%;
+  }
+  .wynikiOsob td:nth-child(2){
+    padding-left: 0.65em;
+  }
+  .wynikiOsob td:nth-child(3){
+    padding-left: 2.3em;
+  }
+  .wynikiOsob td:nth-child(4){
+    padding-left: 3em;
+  }
+  .wynikiOsob td:nth-child(5){
+    padding-left: 3em;
+  }
+  .wynikiOsob td:nth-child(6){
+    padding-left: 3em;
+  }
+  .wynikiOsob td:nth-child(7){
+    padding-left: 3.5em;
+  }
+  .wynikiOsob td:nth-child(8){
+    padding-left: 4em;
+  }
+
+
+  
+}
